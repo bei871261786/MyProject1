@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="校准" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.example.yongchaobei.myapplication.View.CustomView
+            android:id="@+id/cust1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:border_color="@color/colorAccent"
+            app:hour_color="@color/black"
+            app:minus_color="@color/teal"
+            app:second_color="@color/yellow"
+            app:border_width="1dp" />
+    </FrameLayout>
+
+
+</LinearLayout>
